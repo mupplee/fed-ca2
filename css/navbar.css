@@ -1,0 +1,22 @@
+/* reset css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar-nav a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-nav li {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.navbarbar {
+    transition: all .5s
+}
+.fix {
+    box-shadow: 0 0 12px 3px rgba(80,80,80,.8);
+    transform: translateY(-130px);
+    transition: all .5s
+}
