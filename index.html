@@ -5,75 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SP70</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css">
   </head>
   <body>
     <!--navbar section-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top pb-3 pt-4">
-      <div class="container-fluid px-5 mx-5">
-        <div>
-          <a class="navbar-brand" href="index.html"><img src="images/sp-70-logo.png" alt="SP 70" width="400"></a><!--www.sp.edu.sg-->
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<!-- Top Navbar -->
+<div class="sticky-top navbarbar" id="navbarkeep">
+    <nav class="navbar navbar-expand-lg bg-white pb-3 pt-4">
+        <div class="container-fluid px-5 navbarcontent">
+            <a class="navbar-brand" href="index.html">
+            <img src="images/sp-70-logo.png" alt="SP 70" class="img-fluid navbar-logo">
+            </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-lg-none">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="plans.html">Plans</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Forms
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="form.html">Send your messages</a></li>
+                    <li><a class="dropdown-item" href="#">Feedback Form</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Progress scrollbar-->
+    <div class="progress d-none d-lg-block pb-0 pt-0" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" style="width: 25%">25%</div>
+    </div>
+    <!-- Bottom Navbar (for Desktop only) -->
+    <nav class="navbar navbar-expand-lg bg-white d-none d-lg-block pb-0 pt-0">
+        <div class="container-fluid px-5 navbarcontent">
+        <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Plans</a>
+            <a class="nav-link" href="plans.html">Plans</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Forms
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="form.html">Send your messages</a></li>
+              <li><a class="dropdown-item" href="#">Feedback Form</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </ul>
+        </div>
+    </nav>
+</div>
+    <!--Content section-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
       </div>
-    </nav>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <!--Content section-->
-    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-      dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-        dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-          dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-          <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-            dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-              dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-                dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-                  dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-                    dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-                      dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-                      <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-                        dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-                          dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
-                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem magnam, dolorum est eum iusto vitae 
-                            dignissimos quas tempora nobis modi, hic aliquam quis doloremque possimus, voluptatem esse repellat mollitia!</p>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Content section-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/sp-70-logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <!-- Footer Section -->
     <footer>
-      <div class="flex-nav-column">
-      <div class="nav-column-one">
+      <div class="row g-2">
+      <div class="col-sm-4 col-md-6 col-lg-3">
           <a href="index.html"><h1>Home</h1></a>
           <ul>
              <li><a href="index.html#main-content">SDG 7</a></li>
           </ul>
        </div>
-       <div class="nav-column-two">
+       <div class="col-sm-4 col-md-6 col-lg-3">
           <a href="about.html"><h1>About me</h1></a>
           <ul>
              <li><a href="about.html#about-Introduction">Introduction</a></li>
@@ -82,22 +204,23 @@
              <li><a href="about.html#about-Interests">Interests</a></li>
           </ul>
        </div>
-       <div class="nav-column-three">
+       <div class="col-sm-4 col-md-6 col-lg-3">
           <a href="aspirations.html"><h1>Aspirations</h1></a>
           <ul>
               <li><a href="aspirations.html#flis">Aspirations</a></li>
            </ul>
        </div>
-       <div class="nav-column-four">
+       <div class="col-sm-4 col-md-6 col-lg-3">
           <h1>Contact Info</h1>
-          <a href="mailto:minglong.23@ichat.sp.edu.sg"><img src="images/icon1.png" alt="icon1"></a><!--https://www.flaticon.com/free-icon/social_11516211-->
-          <a href="tel:8171506"><img src="images/icon2.png" alt="icon2"></a><!--https://www.flaticon.com/free-icon/phone-call_5585856 -->
-          <a href="https://www.linkedin.com/in/ming-undefined-156835272" target="_blank"><img src="images/icon3.png" alt="icon3"></a><!--https://www.flaticon.com/free-icon/linkedin_174857 -->
+          <a href="mailto:minglong.23@ichat.sp.edu.sg"><img src="images/icon1.png" alt="icon1"></a>
+          <a href="tel:8171506"><img src="images/icon2.png" alt="icon2"></a>
+          <a href="https://www.linkedin.com/in/ming-undefined-156835272" target="_blank"><img src="images/icon3.png" alt="icon3"></a>
        </div>
       </div>
       <p class="address">&rarr;500 Dover Rd, Singapore 139651 &copy; Ming Long&larr;</p>
   </footer>
     <!--Javascript script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>

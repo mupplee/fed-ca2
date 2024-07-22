@@ -15,8 +15,44 @@
 .navbarbar {
     transition: all .5s
 }
+.navbarcontent {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+}
 .fix {
     box-shadow: 0 0 12px 3px rgba(80,80,80,.8);
     transform: translateY(-130px);
     transition: all .5s
 }
+/* NAVBAR LOGO RESPONSIVE*/
+.navbar-logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    transition: all .5s
+  }
+  
+  @media (max-width: 1200px) {
+    .navbar-logo {
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-logo {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-logo {
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-logo {
+      max-width: 150px;
+    }
+  }
