@@ -3,10 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Send your wishes</title>
+    <title>SP70</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navbar.css">
   </head>
   <body>
+    <!--navbar section-->
+<!-- Top Navbar -->
+<div class="sticky-top navbarbar" id="navbarkeep">
+    <nav class="navbar navbar-expand-lg bg-white pb-3 pt-4">
+        <div class="container-fluid px-5 navbarcontent">
+            <a class="navbar-brand" href="index.html">
+            <img src="images/sp-70-logo.png" alt="SP 70" class="img-fluid navbar-logo">
+            </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-lg-none">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="plans.html">Plans</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Forms
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="form.html">Send your messages</a></li>
+                    <li><a class="dropdown-item" href="#">Feedback Form</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Progress scrollbar-->
+    <div class="progress d-none d-lg-block pb-0 pt-0" role="progressbar" aria-label="Example with label" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar scrollbars" id="scrollbar" style="width: 0%"></div>
+    </div>
+    <!-- Bottom Navbar (for Desktop only) -->
+    <nav class="navbar navbar-expand-lg bg-white d-none d-lg-block pb-0 pt-0">
+        <div class="container-fluid px-5 navbarcontent">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="plans.html">Plans</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Forms
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="form.html">Send your messages</a></li>
+              <li><a class="dropdown-item" href="#">Feedback Form</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </ul>
+        </div>
+    </nav>
+</div>
     <!--Form-->
     <div class="container mt-5">
         <div class="row">
@@ -58,7 +120,41 @@
             </form>   
         </div>
     </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="row g-2">
+        <div class="col-sm-4 col-md-6 col-lg-3">
+            <a href="index.html"><h1>Home</h1></a>
+            <ul>
+               <li><a href="index.html#main-content">SDG 7</a></li>
+            </ul>
+         </div>
+         <div class="col-sm-4 col-md-6 col-lg-3">
+            <a href="about.html"><h1>About me</h1></a>
+            <ul>
+               <li><a href="about.html#about-Introduction">Introduction</a></li>
+               <li><a href="about.html#about-Values">Values</a></li>
+               <li><a href="about.html#about-Personality">Personality</a></li>
+               <li><a href="about.html#about-Interests">Interests</a></li>
+            </ul>
+         </div>
+         <div class="col-sm-4 col-md-6 col-lg-3">
+            <a href="aspirations.html"><h1>Aspirations</h1></a>
+            <ul>
+                <li><a href="aspirations.html#flis">Aspirations</a></li>
+             </ul>
+         </div>
+         <div class="col-sm-4 col-md-6 col-lg-3">
+            <h1>Contact Info</h1>
+            <a href="mailto:minglong.23@ichat.sp.edu.sg"><img src="images/icon1.png" alt="icon1"></a>
+            <a href="tel:8171506"><img src="images/icon2.png" alt="icon2"></a>
+            <a href="https://www.linkedin.com/in/ming-undefined-156835272" target="_blank"><img src="images/icon3.png" alt="icon3"></a>
+         </div>
+        </div>
+        <p class="address">&rarr;500 Dover Rd, Singapore 139651 &copy; Ming Long&larr;</p>
+    </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="js/validation.js"></script>
+      <script src="js/navbar.js"></script>
     </body>
 </html>

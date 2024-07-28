@@ -1,9 +1,4 @@
-/* reset css */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+/* navbar elements */
 .navbar-nav a {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -20,10 +15,15 @@
     margin: 0 auto;
     max-width: 1280px;
 }
+/* lower navbar transformation scroll */
 .fix {
     box-shadow: 0 0 12px 3px rgba(80,80,80,.8);
     transform: translateY(-130px);
     transition: all .5s
+}
+/* progress bar */
+.scrollbars {
+  transition: all .500s
 }
 /* NAVBAR LOGO RESPONSIVE*/
 .navbar-logo {
@@ -56,3 +56,11 @@
       max-width: 150px;
     }
   }
+
+/* footer */
+footer {
+
+}
+footer > a {
+
+}
