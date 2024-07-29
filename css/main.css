@@ -66,8 +66,22 @@
 
 /* footer */
 footer {
-
+  color: white;
+  background-color: black;
+  height: auto;
+  text-align: center;
 }
-footer > a {
 
+footer ul li a, footer a, footer ul{
+  display: block;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer ul li a:hover , footer a:hover {
+  border-radius: 3px;
+  background-color: rgb(66, 62, 62);
+  color: white;
+  text-align: center;
 }

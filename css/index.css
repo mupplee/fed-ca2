@@ -1,0 +1,19 @@
+/* Carousell fix */
+.fixed-height-carousel {
+    height: 700px;
+}
+
+.fixed-height-carousel .carousel-inner {
+    height: 100%;
+  }
+  
+  .fixed-height-carousel .carousel-item {
+    height: 100%;
+  }
+
+.fixed-height-carousel .carousel-item img {
+    object-fit: fill;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
