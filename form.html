@@ -112,6 +112,10 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Share with us your personal messagea and well wishes for SP70</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+                <div class="mb-3">
+                    <label for="photo" class="form-label">Upload a Photo (optional)</label>
+                    <input type="file" class="form-control" id="photo" accept="image/*">
+                </div>
                 <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                 <label class="form-check-label" for="exampleCheck1">I agree to the terms & conditions</label>
@@ -122,36 +126,21 @@
     </div>
     <!-- Footer Section -->
     <footer>
-        <div class="row g-2">
-        <div class="col-sm-4 col-md-6 col-lg-3">
-            <a href="index.html"><h1>Home</h1></a>
-            <ul>
-               <li><a href="index.html#main-content">SDG 7</a></li>
-            </ul>
-         </div>
-         <div class="col-sm-4 col-md-6 col-lg-3">
-            <a href="about.html"><h1>About me</h1></a>
-            <ul>
-               <li><a href="about.html#about-Introduction">Introduction</a></li>
-               <li><a href="about.html#about-Values">Values</a></li>
-               <li><a href="about.html#about-Personality">Personality</a></li>
-               <li><a href="about.html#about-Interests">Interests</a></li>
-            </ul>
-         </div>
-         <div class="col-sm-4 col-md-6 col-lg-3">
-            <a href="aspirations.html"><h1>Aspirations</h1></a>
-            <ul>
-                <li><a href="aspirations.html#flis">Aspirations</a></li>
-             </ul>
-         </div>
-         <div class="col-sm-4 col-md-6 col-lg-3">
-            <h1>Contact Info</h1>
-            <a href="mailto:minglong.23@ichat.sp.edu.sg"><img src="images/icon1.png" alt="icon1"></a>
-            <a href="tel:8171506"><img src="images/icon2.png" alt="icon2"></a>
-            <a href="https://www.linkedin.com/in/ming-undefined-156835272" target="_blank"><img src="images/icon3.png" alt="icon3"></a>
-         </div>
+        <div class="container col">
+        <div class="footer_class">
+          <div class="col-sm-4 col-md-6 col-lg-3 mt-5 text-start">
+            <div class="logo py-5">
+              <img src="images/sp-footer-logo.png" alt="sp-footer-logo" width="175" height="39">
+            </div>
+            <div>
+              <p class="sp">Singapore Polytechnic</p>
+              <p>500 Dover Road Singapore 139651</p>
+            </div>
+          </div>
         </div>
-        <p class="address">&rarr;500 Dover Rd, Singapore 139651 &copy; Ming Long&larr;</p>
+        <div>
+          <p class="address justify-content-center">&rarr;500 Dover Rd, Singapore 139651 &copy; Ming Long&larr;</p>
+        </div>
     </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="js/validation.js"></script>

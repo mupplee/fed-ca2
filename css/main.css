@@ -1,11 +1,22 @@
+/* basic css */
+body {
+  font-family: Catamaran,sans-serif;
+}
 /* navbar elements */
 .navbar-nav a {
     padding-top: 15px;
     padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 .navbar-nav li {
     padding-left: 13px;
     padding-right: 13px;
+}
+.navbar-nav li:hover> a {
+  padding: 15px 0 12px;
+  border-bottom: 3px solid #ea1331
 }
 .navbarbar {
     transition: all .5s
@@ -15,12 +26,11 @@
     margin: 0 auto;
     max-width: 1280px;
 }
-
 .container {
   position: relative;
   margin: 0 auto;
   max-width: 1280px;
-  padding: 0 20px
+  padding: 0 20px;
 }
 /* lower navbar transformation scroll */
 .fix {
@@ -84,4 +94,14 @@ footer ul li a:hover , footer a:hover {
   background-color: rgb(66, 62, 62);
   color: white;
   text-align: center;
+}
+
+.footer_class {
+  position: relative;
+  border-bottom: 2px solid #fff;
+}
+
+.logo {
+  display: inline-block;
+  width: 175px;
 }
