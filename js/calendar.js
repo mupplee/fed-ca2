@@ -1,4 +1,37 @@
 "use strict";
+var dayEvent = new Array();
+
+dayEvent[1] = "<br />";
+dayEvent[2] = "<br />";
+dayEvent[3] = "<br />";
+dayEvent[4] = "<br />";
+dayEvent[5] = "<br />";
+dayEvent[6] = "<br />";
+dayEvent[7] = "<br />";
+dayEvent[8] = "<br />";
+dayEvent[9] = "<br />";
+dayEvent[10] ="<br />";
+dayEvent[11] ="<br />";
+dayEvent[12] ="<br /><a href='https://for.edu.sg/sp70charitygolf'>SP 70th Anniversary Charity Golf & Dinner</a><br />Venue: Orchid Country Club<br />Time:<br />Golf - 11am-6.30pm<br />Dinner - 7.30-10.30pm";
+dayEvent[13] ="<br />";
+dayEvent[14] ="<br />";
+dayEvent[15] ="<br />";
+dayEvent[16] ="<br />";
+dayEvent[17] ="<br />";
+dayEvent[18] ="<br />";
+dayEvent[19] ="<br />";
+dayEvent[20] ="<br />";
+dayEvent[21] ="<br />";
+dayEvent[22] ="<br />";
+dayEvent[23] ="<br />";
+dayEvent[24] ="<br />";
+dayEvent[25] ="<br />";
+dayEvent[26] ="<br />";
+dayEvent[27] ="<br />";
+dayEvent[28] ="<br />";
+dayEvent[29] ="<br />";
+dayEvent[30] ="<br />";
+dayEvent[31] ="<br /><a href='https://www.sp.edu.sg/ccas/our-events/poly-50'>Poly50 x SP@70</a><br />Venue: Singapore Polytechnic<br />Time: 2pm";
 /* Set the date displayed in the calendar */
 var thisDay = new Date();
 
@@ -98,37 +131,3 @@ function calDays(calDate){
 
    return htmlCode
 }
-
-var dayEvent = new Array();
-
-dayEvent[1] = "";
-dayEvent[2] = "";
-dayEvent[3] = "";
-dayEvent[4] = "";
-dayEvent[5] = "";
-dayEvent[6] = "";
-dayEvent[7] = "";
-dayEvent[8] = "";
-dayEvent[9] = "";
-dayEvent[10] ="";
-dayEvent[11] ="";
-dayEvent[12] ="";
-dayEvent[13] ="";
-dayEvent[14] ="";
-dayEvent[15] ="";
-dayEvent[16] ="";
-dayEvent[17] ="";
-dayEvent[18] ="";
-dayEvent[19] ="";
-dayEvent[20] ="";
-dayEvent[21] ="";
-dayEvent[22] ="";
-dayEvent[23] ="";
-dayEvent[24] ="";
-dayEvent[25] ="";
-dayEvent[26] ="";
-dayEvent[27] ="";
-dayEvent[28] ="";
-dayEvent[29] ="";
-dayEvent[30] ="";
-dayEvent[31] ="";

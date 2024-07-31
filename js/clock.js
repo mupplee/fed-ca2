@@ -9,7 +9,7 @@ function runClock(){
     var currentDay = new Date();
     
     // Set the target date
-    var targetDate = new Date("October 27, 2034");
+    var targetDate = new Date("July 12, 2025");
     
     // Calculate the time difference
     var timeDiff = targetDate - currentDay;
@@ -22,9 +22,6 @@ function runClock(){
     var secsLeft = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
     // Update the HTML elements
-    document.getElementById("years").textContent =  Math.floor(yearsLeft);
-    document.getElementById("days").textContent =  Math.floor(daysLeft);
-    document.getElementById("hrs").textContent =  Math.floor(hrsLeft);
-    document.getElementById("mins").textContent =  Math.floor(minsLeft);
-    document.getElementById("secs").textContent =  Math.floor(secsLeft);
+    document.getElementById("timer").innerHTML = yearsLeft + "yr " + daysLeft + "d " + hrsLeft + "h "
+  + minsLeft + "m " + secsLeft + "s ";
 }
