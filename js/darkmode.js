@@ -16,7 +16,7 @@ darkModeSwitch.addEventListener('change', () => {
 function setTheme(theme) {
     document.body.setAttribute('data-bs-theme', theme);
     if (theme === 'dark') {
-    navbarLogo.src = 'images/sp-70-light.png';
+    navbarLogo.src = 'images/sp-70-light.png'; //img from https://www.pngegg.com/en/png-nsihh
     } else {
     navbarLogo.src = 'images/sp-70-logo.png';
     }
