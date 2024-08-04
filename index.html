@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
-  <body data-bs-theme="light"><!--Bootstraps components used here: navbar, carousel, card, accordion, list group, progress, collapse, buttons-->
+  <body data-bs-theme="light"><!--Bootstraps components used here: navbar, carousel, card, accordion, list group, progress, collapse, buttons, offcanvas-->
   <!--navbar section-->
   <!-- Top Navbar -->
   <div class="sticky-top bg-body" id="navbarkeep">
@@ -210,7 +210,19 @@
           </div>
         </div>
           <div class="d-flex justify-content-center">
-            <a href="https://www.sp.edu.sg/sp/about-sp/publications/sp70-for-all-ages" class="btn btn-danger border border-light" target="_blank">Go Get Our Book!</a>
+            <button class="btn btn-danger border border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Go Get Our Book!</button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Links to the book</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <p>Launch of the SP's 70th anniversary commemorative book “For All Ages, Singapore Polytechnic At Seventy” at the third Polytechnic-ITE (POLITE) Staff Appreciation Day on 31 October 2023, where Minister of Education Mr Chan Chun Sing officiated and marked the commencement of SP's 70th anniversary celebrations.</p>
+                <p>Download the e-book and discover what makes SP a poly 'For All Ages'.</p>
+                <a href="https://www.sp.edu.sg/sp/about-sp/publications/sp70-for-all-ages" class="btn btn-danger border border-light" target="_blank">Go Get Our Book!</a>
+              </div>
+            </div>
           </div>
       </div>
     </div>

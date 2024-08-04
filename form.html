@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body data-bs-theme="light"><!--Bootstraps components used here: navbar, progress, collapse, buttons, Modal-->
+  <body data-bs-theme="light"><!--Bootstraps components used here: navbar, progress, collapse, buttons, Modal, Spinners-->
   <!--navbar section-->
   <!-- Top Navbar -->
   <div class="sticky-top bg-body" id="navbarkeep">
@@ -76,7 +76,12 @@
     <!--Form-->
     <div class="container mt-5">
         <div class="row">
-            <h2 class="text-danger text-center mb-5">My Form</h2>
+            <div class="d-flex justify-content-center">
+              <h2 class="text-danger text-center mb-5">My Form</h2>
+              <div class="spinner-grow text-danger ms-auto" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
             <form id="messageForm" class="needs-validation" novalidate>
                 <div class="mb-2">
                     <label for="validationCustom01" class="form-label">Full name</label>
@@ -199,10 +204,11 @@
         <p class="text-center mb-0">&rarr;500 Dover Rd, Singapore 139651 &copy; Ming Long&larr;</p>
       </div>
     </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script src="js/validation.js"></script>
-      <script src="js/navbar.js"></script>
-      <script src="js/form.js"></script>
-      <script src="js/darkmode.js"></script>
-    </body>
+    <!--Javascript script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/darkmode.js"></script>
+  </body>
 </html>
