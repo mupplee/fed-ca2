@@ -22,6 +22,5 @@ function runClock(){
     var secsLeft = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
     // Update the HTML elements
-    document.getElementById("timer").innerHTML = yearsLeft + "yr " + daysLeft + "d " + hrsLeft + "h "
-  + minsLeft + "m " + secsLeft + "s ";
+    document.getElementById("timer").innerHTML = yearsLeft + "yr " + daysLeft + "d " + hrsLeft + "h "+ minsLeft + "m " + secsLeft + "s ";
 }

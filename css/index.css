@@ -1,19 +1,61 @@
 /* Carousell fix */
 .fixed-height-carousel {
-    height: 700px;
+  position: relative;
+  height: 590px;
+  width: auto;
 }
 
+.fixed-height-carousel .carousel-item,
 .fixed-height-carousel .carousel-inner {
-    height: 100%;
-  }
-  
-  .fixed-height-carousel .carousel-item {
-    height: 100%;
-  }
+  height: 100%;
+}
 
 .fixed-height-carousel .carousel-item img {
-    object-fit: fill;
-    object-position: center;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+}
+/* calendar */
+#calendar_table {
+  background-color: #f6323f18;
+  font-size: 0.9em;
+  font-family: Catamaran, sans-serif;
+  width: 100%;
+  box-shadow: rgb(51, 51, 51) 0px 0px 5px;
+}
+#calendar_table caption {
+  caption-side: top;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 1.6em;
+  letter-spacing: 0.3em;
+}
+
+.calendar_weekdays {
+  width: 14.28%;
+  font-size: 1em;
+  border-bottom: 3px solid gray;
+}
+
+.calendar_dates {
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.8em;
+  padding: 3px;
+  border: 1px dotted rgb(0, 0, 0);
+  height: 100px;
+  width: 100px;
+}
+
+#calendar_today {
+  font-weight: bold;
+  background-color: rgb(158, 158, 158);
+}
+
+div#calendar {
+  width: 80%;
+  margin: 30px auto 10px;
 }
